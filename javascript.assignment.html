@@ -1,0 +1,297 @@
+                            MODULE 6) JAVASCRIPT BASIC & DOM
+
+QUE 1: What is javascript?
+ANS  : JavaScript is the Programming Language for the Web.
+       JavaScript can update and change both HTML and CSS.                  
+       JavaScript can calculate, manipulate and validate data.
+
+QUE 2: What is the use of isNaN function?
+ANS  : The JavaScript isNaN() Function is used to check whether a given value is an illegal number or not. It returns true if the value is a NaN else returns false. It is different from the Number.isNaN() Method.
+
+Syntax:
+
+isNaN( value )
+Parameter Values: This method accepts a single parameter as mentioned above and described below: 
+
+value: It is a required value passed in the isNaN() function.
+Return Value: It returns a Boolean value i.e. returns true if the value is NaN else returns false.
+
+QUE 3: What is negative Infinity?
+ANS  : The negative infinity in JavaScript is a constant value that is used to represent a value that is the lowest available. This means that no other number is lesser than this value. It can be generated using a self-made function or by an arithmetic operation. 
+
+Note: JavaScript shows the NEGATIVE_INFINITY value as -Infinity.
+
+Negative infinity is different from mathematical infinity in the following ways:
+
+Negative infinity results in -0(different from 0 ) when divided by any other number.
+When divided by itself or positive infinity, negative infinity return NaN
+Negative infinity, when divided by any positive number (apart from positive infinity) is negative infinity.
+Negative infinity, divided by any negative number (apart from negative infinity) is positive infinity.
+If we multiply negative infinity with NaN, we will get NaN as a result.
+The product of 0 and negative infinity is Nan.
+The product of two negative infinities is always a positive infinity.
+The product of both positive and negative infinity is always negative infinity.
+
+QUE 4: Which company developed JavaScript?
+ANS  :  The first ever JavaScript was created by Brendan Eich at Netscape, and has since been updated to conform to ECMA-262 Edition 5 and later versions.The early versions of JavaScript were called Mocha. Not long after a Mocha prototype was introduced into Netscape Communicator (May 1995), it was renamed to LiveScript, purely because the world Live was better for marketing.
+
+QUE 5: What are undeclared and undefined variables?
+ANS  : Undefined: It occurs when a variable has been declared but has not been assigned any value. Undefined is not a keyword. 
+
+Undeclared: It occurs when we try to access any variable that is not initialized or declared earlier using the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclared variable, we will face the runtime error with the return value as “undefined”. The scope of the undeclared variables is always global. 
+
+QUE 6: Write the code for adding new elements dynamically?
+ANS  :  Javascript is a very important language when it comes to learning how the browser works. Often there are times we would like to add dynamic elements/content to our web pages. This post deals with all of that.
+
+Creation of new element: New elements can be created in JS by using the createElement() method.  
+
+Syntax:
+
+document.createElement("<tagName>");  
+// Where <tagName> can be any HTML 
+// tagName like div, ul, button, etc.
+
+// newDiv element has been created
+For Eg: let newDiv = document.createElement("div");
+Once the element has been created, let’s move on to the setting of attributes of the newly created element.
+
+QUE 7:What is the difference between ViewState and SessionState?
+ANS  :  It is known that the web is stateless, which means every time a specific webpage is requested. It is recreated each time and posted to the server. Also, HTTP is a stateless protocol, i.e. it cannot hold client information on the webpage. So it need to maintain the state of a page and the server-side as well, State management is done. ViewState and SessionState are used for client-side state management and server-side state management respectively. The basic difference between these two is that the ViewState is to manage state at the client’s end, making state management easy for end-user while SessionState manages state at the server’s end, making it easy to manage content from this end too.
+
+ViewState: It is maintained at only one level that is page-level. Changes made on a single page is not visible on other pages. Information that is gathered in view state is stored for the clients only and cannot be transferred to any other place. View state is synonymous with serializable data only.
+
+ViewState has a tendency for the persistence of page-instance-specific data. When view state is used, the values posted of a particular page persist in the browse area that the client is using and post back only when the entire operation is done. The data of the previous page is no longer available when another page is loaded. Also, Data is not secure in this case because it is exposed to clients. Encryption can be used for data security.
+
+SessionState: It is maintained at session-level and data can be accessed across all pages in the web application. The information is stored within the server and can be accessed by any person that has access to the server where the information is stored.
+
+QUE 8:What is === operator?
+ANS  :   An operator, in computer programing, is a symbol that usually represents an action or process. These symbols were adapted from mathematics and logic. An operator is capable of manipulating a certain value or operand.
+
+Operators are the backbone of any program and they are used for everything from very simple functions like counting to complex algorithms like security encryption.
+
+QUE 9: How can the style/class of an element be changed?
+ANS  :  In this article, we will learn how we can change the style/class of an element. If you want to build a cool website or app then UI plays an important role. We can change, add or remove any CSS property from an HTML element on the occurrence of any event with the help of JavaScript. There are two common approaches that allow us to achieve this task.
+
+style.property
+Changing the class itself
+Approach 1: Changing CSS with the help of the style property:
+
+Syntax:
+
+document.getElementById("id").style.property = new_style
+Example: In this example, we have built a PAN number validator. First, we will take the input value and match it with a regex pattern. If it matches then using JavaScript add an inline style on the <p> tag. Otherwise, add a different style on the <p> tag.
+       
+QUE 10:How to read and write a file using JavaScript?
+ANS  :  On the client side, you can’t read or write files in JavaScript browsers. The fs module in Node.js may be used to accomplish this on the server-side. It has methods for reading and writing files on the file system that are both synchronous and asynchronous. Let’s demonstrate some examples of reading and writing files with the node.js fs module.
+
+The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file into memory and stores it in a buffer. 
+
+Syntax:
+
+fs.readFile( file_name, encoding, callback_function )
+
+QUE 11: What are all the looping structures in JavaScript?
+ANS   :   Looping in programming languages is a feature that facilitates the execution of a set of instructions/functions repeatedly while some condition evaluates to true. For example, suppose we want to print “Hello World” 10 times. This can be done in two ways as shown below:
+
+Iterative Method: The iterative method to do this is to write the console.log() statement 10 times. 
+
+
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+console.log("Hello World");
+Using Loops: In Loop, the statement needs to be written only once and the loop will be executed 10 times as shown below: 
+
+
+for (let i = 0; i < 10; i++) {
+    console.log("Hello World!");
+}
+Many things may seem confusing to you in the above program at this point of time but do not worry you will be able to understand everything about loops in JavaScript by the end of this tutorial. You can observe that in the above program using loops, we have used the console.log statement only once but still, the output of the program will be the same as that of the iterative program where we have used the console.log statement 10 times. In computer programming, a loop is a sequence of instructions that is repeated until a certain condition is reached.
+
+QUE 12: How can you convert the string of any base to an integer in JavaScript?
+ANS   : Given a string containing an integer value and along with that user passes a base value. We need to convert that string of any base value to an integer in JavaScript.
+
+String          Integer
+"1002"            1002
+For performing the above-illustrated task, we would be using a method (or a function) provided by JavaScript called as parseInt(). 
+
+This is a special method, provided by JavaScript, that takes an integer value (of any base which is either specified or not) and further converts the string into an integer value.
+
+Syntax:
+
+
+Following is the syntax that a user may use to convert a string into an integer value (of any base)-
+
+parseInt(string_value, base)
+Alternatively, if we don’t want to specify the base value and just want to convert our string value into an integer value itself, then we may use the following syntax also-
+
+parseInt(string_value)
+Default value returned by base or radix of parseInt() method is 10. In other words, if we don’t specify any base or radix value then it by default converts the string value to an integer value by taking into regard the base or radix value as 10.
+
+Let us visualize all of the above-illustrated facts with some of the following examples-
+
+QUE 13: What is the function of the delete operator?
+ANS   :  This article is going to discuss the delete operator available in JavaScript. Delete is comparatively a lesser-known operator in JavaScript. This operator is more specifically used to delete JavaScript object properties.
+
+The JavaScript pop(), shift(), or splice() methods are available to delete an element from an array. But because of the key-value pair in an object, deleting is more complicated. Note that, the delete operator only works on objects and not on variables or functions.
+
+Syntax:
+
+delete object
+// or
+delete object.property
+// or
+delete object['property']
+Parameter: It does not take any parameter.
+
+QUE 14:What are all the types of Pop up boxes available in JavaScript?
+ANS   : In Javascript, popup boxes are used to display the message or notification to the user. There are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.
+
+Alert Box: It is used when a warning message is needed to be produced. When the alert box is displayed to the user, the user needs to press ok and proceed.
+
+Syntax: 
+
+alert("your Alert here")
+
+QUE 15:What is the use of Void (0)?
+ANS   : You might have occasionally came across “javascript:void(0)” in an HTML Document. It is often used when inserting an expression in a web page might produce some unwanted effect. To remove this effect, “javascript:void(0)” is used. This expression returns undefined primitive value. This is often used with hyperlinks. Sometimes, you will decide to call some JavaScript from inside a link. Normally, when you click a link, the browser loads a brand new page or refreshes the same page (depending on the URL specified). But you most likely don’t desire this to happen if you have hooked up some JavaScript thereto link. To prevent the page from refreshing, you could use void(0). 
+
+Using “#” in anchor tag: When writing the following code in the editor, the web page is refreshed after the alert message is shown. 
+
+Example: 
+
+
+<h1 style="color:green">GeeksforGeeks</h1> 
+<h3>without JavaScript:void(0)</h3> 
+<a href="#" ondblclick="alert('Welcome to Geeks for Geeks')"> 
+    Double click on me </a> 
+<a href="#" ondblclick="geeks()"> 
+    Double click on me 
+</a> 
+<script> 
+    function geeks(){ 
+    document.getElementById("gfg") 
+        .innerHTML='Welcome to GeeksforGeeks'; 
+    } 
+</script> 
+<p id="gfg"></p>
+
+QUE 16:How can a page be forced to load another page in JavaScript?How can a page be forced to load another page in JavaScript?
+ANS   : In this article, we will see how can a page be forced to load another page in JavaScript.
+
+Approach: We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+
+Syntax:
+
+<script>
+    window.location 
+</script>
+
+QUE 17:What are the disadvantages of using innerHTML in JavaScript?
+ANS   : The innerHTML property is a part of the Document Object Model (DOM) that is used to set or return the HTML content of an element. Where the return value represents the text content of the HTML element. It allows JavaScript code to manipulate a website being displayed. More specifically, it sets or returns the HTML content (the inner HTML) of an element. The innerHTML property is widely used to modify the contents of a webpage as it is the easiest way of modifying DOM. But there are some disadvantages to using innerHTML in JavaScript.
+
+Disadvantages of using innerHTML property in JavaScript:
+
+The use of innerHTML very slow: The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+Preserves event handlers attached to any DOM elements: The event handlers do not get attached to the new elements created by setting innerHTML automatically. To do so one has to keep track of the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers.
+Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.
+Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.
+Example:
+
+<p id="geek">Geeks</p>
+title = document.getElementById('#geek')
+
+// The whole "geek" tag is reparsed
+title.innerHTML += '<p> forGeeks </p>'
+Old content replaced issue: The old content is replaced even if object.innerHTML = object.innerHTML + ‘html’ is used instead of object.innerHTML += ‘html’. There is no way of appending without reparsing the whole innerHTML. Therefore, working with innerHTML becomes very slow. String concatenation just does not scale when dynamic DOM elements need to be created as the plus’ and quote openings and closings becomes difficult to track.
+Can break the document: There is no proper validation provided by innerHTML, so any valid HTML code can be used. This may break the document of JavaScript. Even broken HTML can be used, which may lead to unexpected problems.
+Can also be used for Cross-site Scripting(XSS): The fact that innerHTML can add text and elements to the webpage, can easily be used by malicious users to manipulate and display undesirable or harmful elements within other HTML element tags. Cross-site Scripting may also lead to loss, leak and change of sensitive information.
+Example:
+
+
+<!DOCTYPE html>  
+<html>  
+  
+<head>  
+    <title> 
+        Using innerHTML in JavaScript 
+    </title>  
+</head>  
+  
+<body style="text-align: center">  
+      
+    <h1 style="color:green">  
+        GeeksforGeeks  
+    </h1>  
+  
+    <p id="P"> 
+        A computer science 
+        portal for geeks. 
+    </p>  
+  
+    <button onclick="geek()"> 
+        Try it 
+    </button>  
+  
+    <p id="p"></p>  
+  
+    <script>  
+        function geek() {  
+            var x = document.getElementById("P") 
+                        .innerHTML;  
+              
+            document.getElementById("p") 
+                        .innerHTML = x;  
+              
+            document.getElementById("p") 
+                        .style.color = "green";  
+        }  
+    </script>  
+</body>  
+  
+</html> 
+
+QUE 18: Create password field with show hide functionalities 
+ANS   :   <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS for the password input field and the show/hide toggle button */
+        #password {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #togglePassword {
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="password"> Enter Password:</label>
+    <input type="password" id="password" placeholder="Enter your password">
+    <span id="togglePassword" onclick="togglePasswordVisibility()">Show</span>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordField = document.getElementById("password");
+            const toggleButton = document.getElementById("togglePassword");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.textContent = "Hide";
+            } else {
+                passwordField.type = "password";
+                toggleButton.textContent = "Show";
+            }
+        }
+    </script>
+</body>
+</html>
