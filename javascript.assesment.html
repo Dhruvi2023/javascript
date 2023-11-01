@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" integrity="sha512-UBY4KATrDAEKgEEU+RAfY4yWrK0ah43NGwNr5o/xmncxsT+rv8jp7MI3a00I0Ep3NbAx05U5kw3DvyNCoz+Wcw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style type="text/css">
+        #bx-pager {
+          text-align: center;
+          margin-top: -30px;
+        }
+      
+        #bx-pager a {
+          margin: 0 3px;
+        }
+      
+        #bx-pager a img {
+            height: 100px;
+            width: 100px;
+          padding: 3px;
+          border: solid #ccc 1px
+        }
+      
+        #bx-pager a.active img {
+          border: solid #5280DD 1px;
+        }
+
+        .bxslider li{
+            width: 100%;
+            height: 480px;
+        }
+        .bxslider li img{
+            width: 100%;
+        }
+      </style>
+      
+</head>
+<body>
+
+      <ul class="bxslider">
+        <li><img src="https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?auto=compress&cs=tinysrgb&w=600" /></li>
+        <li><img src="https://images.pexels.com/photos/2983103/pexels-photo-2983103.jpeg?auto=compress&cs=tinysrgb&w=600" /></li>
+        <li><img src="https://images.pexels.com/photos/818789/pexels-photo-818789.jpeg?auto=compress&cs=tinysrgb&w=600" /></li>
+      </ul>
+      
+      <div id="bx-pager">
+        <a data-slide-index="0" href=""><img src="https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?auto=compress&cs=tinysrgb&w=600" /></a>
+        <a data-slide-index="1" href=""><img src="https://images.pexels.com/photos/2983103/pexels-photo-2983103.jpeg?auto=compress&cs=tinysrgb&w=600" /></a>
+        <a data-slide-index="2" href=""><img src="https://images.pexels.com/photos/818789/pexels-photo-818789.jpeg?auto=compress&cs=tinysrgb&w=600" /></a>
+      </div>
+      <script>
+        $('.bxslider').bxSlider({
+    pagerCustom: '#bx-pager'
+  });
+      </script>
+</body>
+</html>
